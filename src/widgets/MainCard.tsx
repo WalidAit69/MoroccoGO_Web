@@ -2,7 +2,7 @@ import RatingCircle from "./RatingCircle";
 
 const MainCard = () => {
   return (
-    <div className="maincard">
+    <button className="maincard">
       <img src="" alt="" />
       <div className="maincard_info">
         <span className="name">name</span>
@@ -13,7 +13,7 @@ const MainCard = () => {
         <span className="location">location</span>
         <span className="price">price</span>
       </div>
-    </div>
+    </button>
   );
 };
 

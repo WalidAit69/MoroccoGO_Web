@@ -7,13 +7,8 @@ import { motion } from "framer-motion";
 const EssentialSection = () => {
   return (
     <section>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.3, delay: 0.7, ease: "easeIn" }}
-        className="essential_section"
-      >
-        <h2>Essential Morocco</h2>
+      <div className="essential_section">
+        <h2>Essentials in Morocco</h2>
 
         <motion.div
           initial={{ opacity: 0 }}
@@ -39,13 +34,13 @@ const EssentialSection = () => {
             }}
             className="main-slider"
           >
-            <SplideSlide className="cities-coantainer">
+            <SplideSlide>
               <MainCard />
             </SplideSlide>
-            <SplideSlide className="cities-coantainer">
+            <SplideSlide>
               <MainCard />
             </SplideSlide>
-            <SplideSlide className="cities-coantainer">
+            <SplideSlide>
               <MainCard />
             </SplideSlide>
           </Splide>
@@ -75,13 +70,13 @@ const EssentialSection = () => {
             }}
             className="main-slider"
           >
-            <SplideSlide className="cities-coantainer">
+            <SplideSlide>
               <MainCard />
             </SplideSlide>
-            <SplideSlide className="cities-coantainer">
+            <SplideSlide>
               <MainCard />
             </SplideSlide>
-            <SplideSlide className="cities-coantainer">
+            <SplideSlide>
               <MainCard />
             </SplideSlide>
           </Splide>
@@ -113,18 +108,18 @@ const EssentialSection = () => {
             }}
             className="main-slider"
           >
-            <SplideSlide className="cities-coantainer">
+            <SplideSlide>
               <MainCard />
             </SplideSlide>
-            <SplideSlide className="cities-coantainer">
+            <SplideSlide>
               <MainCard />
             </SplideSlide>
-            <SplideSlide className="cities-coantainer">
+            <SplideSlide>
               <MainCard />
             </SplideSlide>
           </Splide>
         </motion.div>
-      </motion.div>
+      </div>
     </section>
   );
 };

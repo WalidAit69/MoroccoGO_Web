@@ -173,14 +173,14 @@ const SearchSection = () => {
         >
           {images.map((img, index) => (
             <SplideSlide key={index} className="cities-coantainer">
-              <div className="MainSlider_cities">
+              <button className="MainSlider_cities">
                 <img src={img} alt="landscape" />
 
                 <div className="MainSlider_cities_text">
                   <span>Name</span>
                   <span>Description</span>
                 </div>
-              </div>
+              </button>
             </SplideSlide>
           ))}
         </Splide>

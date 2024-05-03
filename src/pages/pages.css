@@ -211,7 +211,7 @@
 }
 
 .main-slider {
-    width: 80%;
+    width: 70%;
     margin: 3rem auto;
 }
 
@@ -243,6 +243,8 @@
     height: 420px;
     width: 100%;
     cursor: pointer;
+    border: none;
+    background: transparent;
 }
 
 .MainSlider_cities:hover img {
@@ -288,14 +290,17 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    height: 300px;
     margin: 2rem 0;
 }
 
+
+/* cards */
 .maincard {
-    width: 260px;
+    width: 100%;
     height: auto;
     cursor: pointer;
+    border: none;
+    background: transparent;
 }
 
 .maincard img {
@@ -308,6 +313,8 @@
     display: flex;
     flex-direction: column;
     gap: .3rem;
+    align-items: flex-start;
+    margin-left: .1rem;
 }
 
 .maincard .name {
@@ -354,6 +361,7 @@
 
 .maincard_text {
     align-self: self-start;
+    width: 250px;
 }
 
 .maincard_text h3 {
@@ -367,4 +375,160 @@
     opacity: .8;
 }
 
+.maincard_large {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--grey-lightcolor);
+    border-radius: 10px;
+}
+
+.maincard_large img {
+    height: 250px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.maincard_large .maincard_info {
+    padding: .5rem 1rem;
+}
+
+.maincard .description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1.5rem 0;
+    gap: .3rem;
+    padding: .5rem 1rem;
+}
+
+.maincard .description p {
+    text-align: start;
+    opacity: .6;
+    font-weight: 400;
+    font-size: .95rem;
+}
+
+.maincard .description a {
+    opacity: .8;
+    font-weight: 400;
+    font-size: .95rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /* Top attractions */
+
+.Title_Navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5rem 0 1.5rem 0;
+}
+
+.Title_Navigation h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--darkcolor);
+}
+
+.Title_Navigation button {
+    background-color: var(--main-color);
+    padding: .7rem 1rem;
+    border-radius: 20px;
+    font-size: .9rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: .2s;
+}
+
+.Title_Navigation button:hover {
+    background-color: var(--main-lightcolor);
+    color: black;
+    transition: .2s;
+}
+
+.Title_Navigation button:active {
+    transform: scale(1.1);
+}
+
+
+/* Popular cities Section */
+
+.Popular_section {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.Popular_section h2 {
+    text-align: center;
+    margin: 5rem 0 2rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.Popular_cities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.Popular_cities img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.Popular_card_sm {
+    flex: 1.3;
+    height: 200px;
+}
+
+.Popular_card_md {
+    flex: 2;
+    height: 350px;
+}
+
+.Popular_card {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.Popular_card:hover img {
+    transform: scale(1.1);
+    filter: brightness(70%);
+    transition: .3s;
+}
+
+.Popular_card .rank {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.Popular_card .name {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 1));
+}
