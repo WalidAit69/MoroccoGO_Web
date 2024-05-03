@@ -1,0 +1,370 @@
+/* Global Css */
+.container {
+    width: calc(100% - 285px);
+    margin: 0 auto;
+}
+
+.dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+
+/* Home Page */
+
+/* Search Section */
+
+.home_search {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.home_search h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: var(--darkcolor);
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+}
+
+.home_search ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+.home_search ul button {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    background-color: transparent;
+    border: none;
+    height: 40px;
+}
+
+.home_search ul button li {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--dark-lightcolor);
+}
+
+.home_search ul button.active {
+    border-bottom: 2px solid var(--dark-lightcolor);
+}
+
+.home_search form {
+    width: 100%;
+}
+
+.home_search .search-bar {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    height: 60px;
+    border-radius: 35px;
+    padding: 0 .5rem;
+    border: 1px solid var(--grey-lightcolor);
+    z-index: 1000;
+}
+
+.home_search .search-bar.search-bar .input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: .3rem;
+}
+
+.home_search .search-bar input {
+    width: 90%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    outline: transparent;
+    font-size: 1rem;
+}
+
+.home_search .search-bar button {
+    justify-self: flex-end;
+    background-color: var(--main-color);
+    border: none;
+    height: 80%;
+    width: 100px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.home_search .search-bar button:hover {
+    opacity: .9;
+    transition: .2s;
+}
+
+.home_search .dropdown {
+    height: 60px;
+}
+
+.home_search .search-bar.search-bar-active {
+    background-color: white;
+    height: auto;
+    align-items: self-start;
+    border-radius: 15px;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home_search .search-bar.search-bar.search-bar-active .input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: .3rem;
+    border-bottom: 1px solid var(--dark-lightcolor);
+    padding: .5rem;
+}
+
+.home_search .search-bar.search-bar-active input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    outline: transparent;
+    font-size: 1rem;
+}
+
+.home_search .search-bar.search-bar-active button {
+    display: none;
+}
+
+.search-container {
+    width: 100%;
+}
+
+.city_card {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    cursor: pointer;
+    width: 100%;
+    padding: .5rem 1rem;
+    transition: .2s;
+    margin-bottom: .5rem;
+}
+
+.city_card:hover {
+    background-color: var(--grey-lightercolor);
+    transition: .2s;
+}
+
+.city_card .icon,
+.city_card img {
+    height: 55px;
+    width: 55px;
+    background-color: var(--grey-lightercolor);
+    border-radius: 5px;
+    border: 1px solid var(--grey-lightcolor);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.city_card span {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.search-container .seperator {
+    margin-left: 1rem;
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--dark-lightcolor);
+}
+
+.search-container .cities {
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container .cities_text {
+    position: absolute;
+    left: 0;
+    bottom: 100px;
+}
+
+.main-slider {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+.cities-coantainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.MainSlider_cities img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.dark-overlay .MainSlider_cities {
+    filter: brightness(50%);
+}
+
+.MainSlider_cities {
+    position: relative;
+    height: 420px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.MainSlider_cities:hover img {
+    transform: scale(1.1);
+    filter: brightness(50%);
+    transition: 0.5s;
+}
+
+.MainSlider_cities_text {
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
+    max-width: 300px;
+}
+
+.MainSlider_cities_text span {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    display: block;
+}
+
+.MainSlider_cities_text span:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Essential Section */
+
+.essential_section {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.essential_section h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 5rem 0 1.5rem 0;
+    color: var(--darkcolor);
+}
+
+.essential_section .row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 300px;
+    margin: 2rem 0;
+}
+
+.maincard {
+    width: 260px;
+    height: auto;
+    cursor: pointer;
+}
+
+.maincard img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.maincard_info {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.maincard .name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    opacity: 1;
+}
+
+.maincard .reviews {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.maincard .reviews span {
+    font-size: .85rem;
+}
+
+.RatingContainer {
+    display: flex;
+    gap: .1rem;
+}
+
+.RatingCircle {
+    width: 12px;
+    height: 12px;
+    background-color: var(--main-lightcolor);
+    border-radius: 50%;
+}
+
+.RatingCircle.filled {
+    background-color: var(--main-color);
+}
+
+.maincard span {
+    opacity: .6;
+    display: block;
+}
+
+.maincard .price {
+    opacity: 1;
+    font-weight: 500;
+}
+
+.maincard_text {
+    align-self: self-start;
+}
+
+.maincard_text h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--darkcolor);
+}
+
+.maincard_text span {
+    opacity: .8;
+}
+
+/* Top attractions */
