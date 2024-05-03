@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const EssentialSection = () => {
   return (
     <section>
-      <div className="essential_section">
+      <div className="essential_section container_inner">
         <h2>Essentials in Morocco</h2>
 
         <motion.div
@@ -32,7 +32,7 @@ const EssentialSection = () => {
               autoplay: true,
               interval: 5000,
             }}
-            className="main-slider"
+            className="container_inner main-slider"
           >
             <SplideSlide>
               <MainCard />
@@ -68,7 +68,7 @@ const EssentialSection = () => {
               autoplay: true,
               interval: 5000,
             }}
-            className="main-slider"
+            className="container_inner main-slider"
           >
             <SplideSlide>
               <MainCard />
@@ -106,7 +106,7 @@ const EssentialSection = () => {
               autoplay: true,
               interval: 5000,
             }}
-            className="main-slider"
+            className="container_inner main-slider"
           >
             <SplideSlide>
               <MainCard />

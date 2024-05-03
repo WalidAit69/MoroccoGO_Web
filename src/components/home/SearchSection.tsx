@@ -169,7 +169,7 @@ const SearchSection = () => {
             autoplay: true,
             interval: 3000,
           }}
-          className="main-slider"
+          className="container_inner main-slider"
         >
           {images.map((img, index) => (
             <SplideSlide key={index} className="cities-coantainer">

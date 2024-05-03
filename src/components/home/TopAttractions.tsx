@@ -8,7 +8,7 @@ const TopAttractions = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.3, delay: 0.1, ease: "easeIn" }}
-        className="essential_section"
+        className="container_inner essential_section"
       >
         <div>
           <div className="Title_Navigation">

@@ -4,6 +4,11 @@
     margin: 0 auto;
 }
 
+.container_inner {
+    width: 70%;
+    margin: 0 auto;
+}
+
 .dark-overlay {
     position: fixed;
     top: 0;
@@ -17,7 +22,6 @@
 .App_banner {
     position: relative;
     margin: 5rem auto;
-    width: 70%;
 }
 
 .App_banner img {
