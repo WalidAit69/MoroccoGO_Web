@@ -1,3 +1,4 @@
+import AppBanner from "../components/AppBanner";
 import EssentialSection from "../components/home/EssentialSection";
 import PopularCities from "../components/home/PopularCities";
 import SearchSection from "../components/home/SearchSection";
@@ -10,7 +11,8 @@ const Home = () => {
         <SearchSection />
         <EssentialSection />
         <TopAttractions />
-        <PopularCities/>
+        <PopularCities />
+        <AppBanner />
       </div>
     </section>
   );
