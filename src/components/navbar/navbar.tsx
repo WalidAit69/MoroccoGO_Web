@@ -5,8 +5,16 @@ import { motion } from "framer-motion";
 import "./navbar.css";
 import { useState } from "react";
 
-const Navbar = () => {
+interface Props {
+  setShowAuth: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Navbar = ({ setShowAuth }: Props) => {
   const [MenuOpen, setMenuOpen] = useState(false);
+
+  const handleUserClick = () => {
+    setShowAuth(true);
+  };
 
   return (
     <header className="header">
@@ -48,7 +56,7 @@ const Navbar = () => {
         transition={{ duration: 0.3, delay: 0.3, ease: "easeIn" }}
         className="header-right"
       >
-        <button className="userbtn">
+        <button className="userbtn" onClick={handleUserClick}>
           <img src={user} alt="user" />
         </button>
       </motion.div>

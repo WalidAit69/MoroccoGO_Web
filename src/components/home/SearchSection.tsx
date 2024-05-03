@@ -131,7 +131,12 @@ const SearchSection = () => {
             </button>
 
             {search && (
-              <div className="search-container">
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.3, ease: "easeIn" }}
+                className="search-container"
+              >
                 <div className="city_card">
                   <div className="icon">
                     <CiLocationArrow1 size={28} />
@@ -146,7 +151,7 @@ const SearchSection = () => {
                   <CityCard />
                   <CityCard />
                 </div>
-              </div>
+              </motion.div>
             )}
           </div>
           <div className={`${search && "dropdown"}`}></div>

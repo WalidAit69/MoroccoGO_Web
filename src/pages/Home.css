@@ -62,6 +62,10 @@
     z-index: 1000;
 }
 
+.dark-overlay .home_search .search-bar {
+    border-color: rgb(110, 107, 107);
+}
+
 .home_search .search-bar.search-bar .input-container {
     display: flex;
     align-items: center;

@@ -77,7 +77,7 @@ const Footer = () => {
 
         <div className="footer_bottom">
           <div className="footer_bottom_left">
-            <img src={logo} alt="" />
+            <img src={logo} alt="logo" />
             <span>© 2024 Morocco GO LLC All rights reserved.</span>
           </div>
 
